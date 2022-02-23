@@ -116,7 +116,6 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  color: var(--secondary-color);
 }
 .home .col-3-5 .soical-link ul li {
   padding: 10px 20px;
@@ -125,6 +124,16 @@ body {
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+}
+.home .col-3-5 .soical-link ul li a {
+  color: var(--secondary-color);
+}
+.home .col-3-5 .soical-link ul li i {
+  font-size: 1.7em;
+}
+.home .col-3-5 .soical-link ul li:hover {
+  color: var(--main-color);
+  cursor: pointer;
 }
 .home .col-3-5 .soical-link ul li button {
   padding: 10px 30px;
@@ -147,13 +156,7 @@ body {
 .home .col-3-5 .soical-link ul li button:hover {
   box-shadow: 0 0 8px 5px #ccc;
 }
-.home .col-3-5 .soical-link ul li i {
-  font-size: 1.7em;
-}
-.home .col-3-5 .soical-link ul li:hover {
-  color: var(--main-color);
-  cursor: pointer;
-}
+
 /* end home*/
 
 /* start about*/
@@ -212,7 +215,41 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 35px;
 }
+.portfolio .project a {
+  position: relative;
+  content: "Visit site";
+  color: var(--main-color);
+  transition: 1s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+}
 
+.portfolio .project a:hover::before {
+  content: "visit site";
+  position: absolute;
+  top: 35%;
+  left: 22%;
+  z-index: 2;
+  background-color: #48435c;
+  padding: 20px 30px;
+  font-size: 30px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.portfolio .project a img {
+  width: 320px;
+  height: 320px;
+  transition: 1s ease-in-out;
+}
+.portfolio .project a:hover img {
+  opacity: 0.6;
+}
 /* end portfolio */
 
 /* start contact */
