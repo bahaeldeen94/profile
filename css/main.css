@@ -253,7 +253,12 @@ body {
 /* end portfolio */
 
 /* start contact */
+.contact {
+  height: 85vh;
+  padding: 50px 0;
+}
 .contact .contact-form {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -268,10 +273,7 @@ input[type="email"] {
   border-color: transparent;
   margin: 5px 0 0 0;
 }
-.contact {
-  height: 85vh;
-  padding: 50px 0;
-}
+
 .contact .contact-form textarea {
   margin: 5px 0 0 0;
   font-size: 12pt;
@@ -285,13 +287,25 @@ input[type="email"] {
   -o-border-radius: 10px;
   border-color: transparent;
 }
+
 [type="submit"] {
+  content: "submit";
   border-radius: 10px;
   background: #48435c;
   color: #fff;
-  font-size: 12pt;
+  font-size: 1.3em;
+  text-transform: uppercase;
   margin: 5px 0 0 0;
   padding: 10px 30px;
+  cursor: pointer;
+}
+
+[type="submit"]:hover::before {
+  content: "Currently unavailable";
+}
+
+[type="submit"]:hover span {
+  display: none;
 }
 /* end contact */
 
