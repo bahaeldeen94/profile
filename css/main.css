@@ -135,7 +135,7 @@ body {
 .home .col-3-5 .soical-link ul li i {
   font-size: 1.7em;
 }
-.home .col-3-5 .soical-link ul li:hover {
+.home .col-3-5 .soical-link ul li a:hover {
   color: var(--main-color);
   cursor: pointer;
 }
