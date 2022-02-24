@@ -123,14 +123,15 @@ body {
 }
 .home .col-3-5 .soical-link ul li {
   padding: 10px 20px;
+
+}
+.home .col-3-5 .soical-link ul li a {
+  color: var(--secondary-color);  
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
-}
-.home .col-3-5 .soical-link ul li a {
-  color: var(--secondary-color);
 }
 .home .col-3-5 .soical-link ul li i {
   font-size: 1.7em;
