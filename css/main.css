@@ -328,3 +328,10 @@ footer .footerDiv .highlight {
   padding-left: 15px;
 }
 /* end footer */
+/*Media Query*/
+@media screen and (max-width: 1200px) {
+  .responsive-class {
+    margin-left: 12% !important   ;
+    width: 80%;
+  }
+}
