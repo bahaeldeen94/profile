@@ -16,6 +16,7 @@ body {
 }
 .container {
   width: 960px;
+  min-width: 960px;
   margin: 0 auto;
 }
 /* header proparty */
@@ -123,10 +124,9 @@ body {
 }
 .home .col-3-5 .soical-link ul li {
   padding: 10px 20px;
-
 }
 .home .col-3-5 .soical-link ul li a {
-  color: var(--secondary-color);  
+  color: var(--secondary-color);
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -151,11 +151,11 @@ body {
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
   cursor: pointer;
 }
 .home .col-3-5 .soical-link ul li button:hover {
@@ -299,7 +299,7 @@ input[type="email"] {
   background: #48435c;
   color: #fff;
   font-size: 1.3em;
-  text-transform: capitalize;
+  text-transform: uppercase;
   margin: 5px 0 0 0;
   padding: 10px 30px;
   cursor: pointer;
